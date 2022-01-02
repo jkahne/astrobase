@@ -1,5 +1,4 @@
 ---
-import BaseLayout from '../components/BaseLayout.astro';
 
 const title = 'My Astro Blog';
 const description = 'The perfect starter for your perfect blog.';
@@ -7,7 +6,6 @@ const permalink = Astro.site.href;
 
 ---
 
-<BaseLayout title={title} description={description} permalink={permalink}>
   <div class="home-container">
     <div class="home-copy">
       <h1>Hello, my name is <span class="nowrap">Jeremy. 👋</span></h1>
@@ -55,7 +53,6 @@ const permalink = Astro.site.href;
       <p></p>
     </div>
   </div>
-</BaseLayout>
 
 <style>
   .home-container {
