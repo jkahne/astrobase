@@ -1,9 +1,10 @@
 import React from "react";
 
-const ReactThing = () => {
+const ReactThing = (props) => {
   return (
     <>
       Hello
+      {props.children}
       <div>React Thing</div>
     </>
   );
