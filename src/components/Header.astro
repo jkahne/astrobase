@@ -1,0 +1,44 @@
+---
+const { current = '' } = Astro.props;
+---
+
+<style>
+  header {
+    display: flex;
+    margin: 0 auto;
+    padding: 2em;
+    width: 100%;
+    height: var(--header-height);
+    justify-content: space-between;
+    align-items: flex-start;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    z-index: 2 !important;
+  }
+
+  .navlink {
+    transform: skew(-3deg) rotate(-3deg);
+    font-size: calc(1.3rem);
+    min-width: 200px;
+    width: min-content;
+    padding: 0 2rem;
+    color: var(--black);
+    background-color: var(--primary-color);
+    margin: 0.25rem 0;
+    border: 0.25rem solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+</style>
+
+<header>
+  <a href="/" class="navlink">
+    AMAZING CONGLOMERATION OF DISASTERS
+  </a>
+</header>
